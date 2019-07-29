@@ -21,6 +21,7 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="50dp"
         android:background="@color/common_gray"
+        android:text="13753102373"
         />
     <EditText
         android:id="@+id/ed_password"
@@ -31,10 +32,11 @@
         android:layout_marginTop="10dp"
         android:background="@color/common_gray"
         android:inputType="numberPassword"
+        android:text="yzy122149"
         />
 
     <Button
-        android:id="@+id/btn_confrom"
+        android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="20dp"
