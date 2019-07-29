@@ -11,9 +11,9 @@ public class PayLoad<T> implements Function<BaseResponse<T>, BaseResponse<T>> {
 
     @Override
     public BaseResponse<T> apply(BaseResponse<T> response) throws Exception {
-        if (!response.isSuccess()) {
+        if (!"0".equalsIgnoreCase(response.resCode)) {
             /* 服务器端返回errno失败 */
-            throw new ServerException(response.code, response.message);
+            throw new ServerException(1, response.resMsg);
         }
         /* 成功获取 */
         return response;

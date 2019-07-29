@@ -90,12 +90,8 @@ public class LoginActivity extends BaseActivity implements LoginContract.View,Vi
     }
 
     @Override
-    public void callback(boolean v) {
-        if (v) {
-            Toast.makeText(this, "登录成功", Toast.LENGTH_LONG).show();
-        } else {
-            Toast.makeText(this, "登录失败", Toast.LENGTH_LONG).show();
-        }
+    public void callback(String contentStr) {
+        Toast.makeText(this, "登录成功", Toast.LENGTH_LONG).show();
     }
 
     @Override

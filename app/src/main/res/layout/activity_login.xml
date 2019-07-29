@@ -32,7 +32,7 @@
         android:layout_marginTop="10dp"
         android:background="@color/common_gray"
         android:inputType="numberPassword"
-        android:text="yzy122149"
+        android:text="yzy123456"
         />
 
     <Button

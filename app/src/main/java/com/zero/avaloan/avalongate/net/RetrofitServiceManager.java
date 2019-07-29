@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 public class RetrofitServiceManager {
 
-    private static final String BASE_URL = "http://beta7.kkcredit.cn/ccl/data/ws/rest/app/";
+    private static final String BASE_URL = "http://beta6.kkcredit.cn/ccl/data/ws/rest/app/";
     private static final int DEFAULT_TIME_OUT = 5;  //超时时间 5s
     private static final int DEFAULT_READ_TIME_OUT = 10;
     private static final int DEFAULT_WRITE_TIME_OUT = 10;

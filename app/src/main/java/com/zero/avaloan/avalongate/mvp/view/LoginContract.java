@@ -7,7 +7,7 @@ public class LoginContract {
 
         void setLoading(boolean v);
 
-        void callback(boolean v);
+        void callback(String contentStr);
 
         void errorCallback(ServerException e);
 

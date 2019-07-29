@@ -16,14 +16,14 @@ public class LoginModel extends BaseModel {
         this.service = RetrofitServiceManager.getInstance().create(LoginModelService.class);
     }
 
-    public Observable<BaseResponse<String>> login(LoginBody body) {
+    public Observable<BaseResponse<Object>> login(LoginBody body) {
         return observe(service.login(body));
     }
 
     interface LoginModelService {
 
         @POST("v3/login341")
-        Observable<BaseResponse<String>> login(@Body LoginBody body);
+        Observable<BaseResponse<Object>> login(@Body LoginBody body);
 
     }
 
