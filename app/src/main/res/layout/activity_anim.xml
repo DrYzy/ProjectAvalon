@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+        >
+    <include layout="@layout/common_title_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/tv_part1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="3dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:text="帧动画："
+            />
+
+        <ImageView
+            android:id="@+id/img_anim1"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:background="@drawable/frame_anim"
+            />
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:text="补间动画："
+    />
+
+    <ImageView
+            android:id="@+id/img_anim2"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/frame_anim"
+    />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:text="帧+补间动画："
+    />
+
+    <ImageView
+            android:id="@+id/img_anim3"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/frame_anim"
+    />
+
+
+    <ImageView
+        android:id="@+id/img_anim4"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:background="@drawable/frame_anim"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+
+
+</LinearLayout>

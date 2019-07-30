@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                                 android:oneshot="false"><!-- oneshot true:只循环一次；false:循环多次-->
+
+    <item android:drawable="@mipmap/bunny_run1" android:duration="100"/>
+    <item android:drawable="@mipmap/bunny_run2" android:duration="100"/>
+    <item android:drawable="@mipmap/bunny_run3" android:duration="100"/>
+    <item android:drawable="@mipmap/bunny_run4" android:duration="100"/>
+    <item android:drawable="@mipmap/bunny_run5" android:duration="100"/>
+    <item android:drawable="@mipmap/bunny_run6" android:duration="100"/>
+    <item android:drawable="@mipmap/bunny_run7" android:duration="100"/>
+    <item android:drawable="@mipmap/bunny_run8" android:duration="100"/>
+</animation-list>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+    >
+    <include layout="@layout/common_title_bar"/>
+
+    <Button
+        android:id="@+id/btn_mvp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textColor="@color/common_white"
+        android:text="MVP：retrofit+rxjava"
+        style="?android:attr/borderlessButtonStyle"
+        />
+    <Button
+        android:id="@+id/btn_animation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textColor="@color/common_white"
+        android:text="各种动画"
+        style="?android:attr/borderlessButtonStyle"
+        />
+</LinearLayout>

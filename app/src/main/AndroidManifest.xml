@@ -23,7 +23,7 @@
              android:supportsRtl="true"
              android:theme="@style/AppTheme">
         <activity
-                android:name=".mvp.activity.MainActivity"
+                android:name=".base.HomeActivity"
                 android:label="@string/app_name"
                 android:screenOrientation="portrait">
             <intent-filter>
@@ -46,6 +46,14 @@
             android:name=".mvp.activity.LoginActivity"
             android:screenOrientation="portrait"
             />
+        <activity
+                android:name=".mvp.activity.MainActivity"
+                android:screenOrientation="portrait"
+        />
+        <activity
+                android:name=".mvp.activity.AnimationActivity"
+                android:screenOrientation="portrait"
+        />
 
     </application>
 </manifest>
