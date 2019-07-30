@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import com.egoo.sdk.GlobalManager;
+import com.egoo.sdk.entiy.FunConfig;
 import com.zero.avaloan.avalongate.R;
 import com.zero.avaloan.avalongate.base.BaseActivity;
 import com.zero.avaloan.avalongate.mvp.model.LoginModel;
@@ -16,6 +18,8 @@ import com.zero.avaloan.avalongate.mvp.presenter.LoginPresenter;
 import com.zero.avaloan.avalongate.mvp.view.LoginContract;
 import com.zero.avaloan.avalongate.net.ServerError;
 import com.zero.avaloan.avalongate.net.ServerException;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class LoginActivity extends BaseActivity implements LoginContract.View,View.OnClickListener {
     @BindView(R.id.ed_username)

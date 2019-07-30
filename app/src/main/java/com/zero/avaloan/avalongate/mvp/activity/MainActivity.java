@@ -1,6 +1,5 @@
 package com.zero.avaloan.avalongate.mvp.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -9,15 +8,22 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import com.egoo.chat.listener.ChatListener;
+import com.egoo.sdk.GlobalManager;
+import com.egoo.sdk.entiy.FunConfig;
+import com.egoo.sdk.entiy.User;
 import com.zero.avaloan.avalongate.R;
 import com.zero.avaloan.avalongate.base.BaseActivity;
 import com.zero.avaloan.avalongate.mvp.presenter.MainPresenter;
 import com.zero.avaloan.avalongate.mvp.view.MainCallBack;
+import com.zero.avaloan.avalongate.utils.ToastUtils;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.lang.ref.WeakReference;
+import java.util.UUID;
 
 /**
  *
@@ -59,6 +65,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,M
     protected void eventBind() {
         super.eventBind();
         mBtnCfrom.setOnClickListener(this);
+        initChat();
     }
 
     @Override
@@ -67,6 +74,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,M
             case R.id.btn_confrom:
                 String url = mInputEd.getText().toString();
 //                presenter.getUrlData(url);
+                ToastUtils.showToastSafeShort("前往登录");
                 startActivity(new Intent(this,LoginActivity.class));
                 break;
         }
@@ -105,4 +113,74 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,M
             }
         }
     }
+
+
+
+
+    /**
+     * android 初始化 客服
+     *
+     * */
+    private void initChat(){
+        GlobalManager.getInstance().addGlobalListener(new ChatListener() {
+            @Override
+            public void onOrderClick() {
+                startActivity(new Intent(MainActivity.this,LoginActivity.class));
+            }
+
+            @Override
+            public void onConnectOpen(String status) {
+//                Log.e("HomeActivity", status);
+                if ("nomal".equals(status)) {
+
+                } else if ("queued".equals(status)) {
+                    ToastUtils.showToastSafeShort("你已经在排队中了");
+                } else if ("established".equals(status)) {
+                    ToastUtils.showToastSafeShort("您已经有会话在了");
+                }
+            }
+        });
+
+        User user = new User();
+        user.setClientLevel(1);
+//        user.setSkillGroup("egoo_xa");
+        user.setSkillGroup("jd_daojia");//京东在线
+//        user.setSkillGroup("jd_yiyao");
+        user.setSilentGroup("egoo_silent");
+        user.setBizType("200");
+        user.setTenantId("egoo");//egoo
+//        user.setTenantId("dada");//达达
+        user.setFromUserName("18710998518");
+        user.setChannelType("appchat");
+
+        user.setUserPin(UUID.randomUUID().toString());
+
+        user.setFromUserName("13753102373");
+        user.setUserName("13753102373");
+
+        GlobalManager.getInstance().init(user, true, MainActivity.this);
+        GlobalManager.getInstance().startConnect();
+
+    }
+
+    /**
+     * android 开启页面
+     *
+     * 注意权限 和app里的初始化
+     *
+     * */
+    private void jump2Page(){
+        JSONObject json = new JSONObject();
+        try {
+//            json.put("time","2018-01-02  15.12.30");
+            json.put("time",null);
+            json.put("orderid","127837867723");
+            json.put("money","￥18.6");
+            json.put("cancelReason", "态度不好");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        GlobalManager.getInstance().startChat(this,json.toString(), new FunConfig(true));
+    }
+
 }

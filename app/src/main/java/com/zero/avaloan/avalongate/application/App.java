@@ -2,6 +2,8 @@ package com.zero.avaloan.avalongate.application;
 
 import android.app.Application;
 import android.os.Handler;
+import com.egoo.sdk.GlobalManager;
+import com.egoo.sdk.entiy.User;
 
 public class App extends Application {
     private static App appInstance;
@@ -18,6 +20,7 @@ public class App extends Application {
         super.onCreate();
         mMainThreadHandler = new Handler();
         mMainThreadId = android.os.Process.myTid();
+        initChat();
     }
 
     /**
@@ -32,5 +35,9 @@ public class App extends Application {
      */
     public static int getMainThreadId() {
         return mMainThreadId;
+    }
+
+    private void initChat(){
+        GlobalManager.getInstance().initApp(this);
     }
 }

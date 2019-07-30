@@ -5,6 +5,10 @@ import android.view.Gravity;
 import android.widget.Toast;
 import com.zero.avaloan.avalongate.application.App;
 
+/**
+ * Created by xiongchao on 2016/5/18.
+ * 让除了activity的组件也能显示toast
+ */
 public class ToastUtils {
     /**
      * 让Toast可以在非UI线程调用。 短时间
