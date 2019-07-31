@@ -5,10 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.text.Html;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.view.animation.LinearInterpolator;
-import android.view.animation.RotateAnimation;
+import android.view.animation.*;
 import android.widget.ImageView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -76,6 +73,7 @@ public class AnimationActivity extends BaseActivity {
         //设置动画结束后保留结束状态
         anim.setFillAfter(true);//是否最终停留在动画停止的位置
         mImgAni3.startAnimation(anim);
+
     }
 
     private void checkCircleAnim(){
