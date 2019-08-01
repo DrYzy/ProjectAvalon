@@ -10,12 +10,15 @@ import butterknife.ButterKnife;
 import com.zero.avaloan.avalongate.R;
 import com.zero.avaloan.avalongate.mvp.activity.AnimationActivity;
 import com.zero.avaloan.avalongate.mvp.activity.LoginActivity;
+import com.zero.avaloan.avalongate.mvp.activity.RxjavaActivity;
 
 public class HomeActivity extends BaseActivity implements View.OnClickListener {
     @BindView(R.id.btn_mvp)
     Button mBtnMvp;
     @BindView(R.id.btn_animation)
     Button mBtnAni;
+    @BindView(R.id.btn_rx)
+    Button mBtnRxj;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -47,6 +50,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         super.eventBind();
         mBtnMvp.setOnClickListener(this);
         mBtnAni.setOnClickListener(this);
+        mBtnRxj.setOnClickListener(this);
     }
 
     @Override
@@ -57,6 +61,9 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.btn_animation:
                 startActivity(new Intent(HomeActivity.this,AnimationActivity.class));
+                break;
+            case R.id.btn_rx:
+                startActivity(new Intent(HomeActivity.this,RxjavaActivity.class));
                 break;
         }
     }
