@@ -11,9 +11,9 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import com.egoo.chat.listener.ChatListener;
+import com.egoo.chat.ui.activity.ChattingResolvedActivity;
 import com.egoo.sdk.GlobalManager;
-import com.egoo.sdk.entiy.FunConfig;
-import com.egoo.sdk.entiy.User;
+import com.lc.commonlib.User;
 import com.zero.avaloan.avalongate.R;
 import com.zero.avaloan.avalongate.base.BaseActivity;
 import com.zero.avaloan.avalongate.mvp.presenter.MainPresenter;
@@ -123,10 +123,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,M
      * */
     private void initChat(){
         GlobalManager.getInstance().addGlobalListener(new ChatListener() {
-            @Override
-            public void onOrderClick() {
-                startActivity(new Intent(MainActivity.this,LoginActivity.class));
-            }
 
             @Override
             public void onConnectOpen(String status) {
@@ -143,20 +139,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,M
 
         User user = new User();
         user.setClientLevel(1);
-//        user.setSkillGroup("egoo_xa");
-        user.setSkillGroup("jd_daojia");//京东在线
-//        user.setSkillGroup("jd_yiyao");
+        user.setSkillGroup("egoo_test");
         user.setSilentGroup("egoo_silent");
-        user.setBizType("200");
+        user.setBizType("378");
         user.setTenantId("egoo");//egoo
-//        user.setTenantId("dada");//达达
         user.setFromUserName("18710998518");
         user.setChannelType("appchat");
-
-        user.setUserPin(UUID.randomUUID().toString());
-
-        user.setFromUserName("13753102373");
-        user.setUserName("13753102373");
 
         GlobalManager.getInstance().init(user, true, MainActivity.this);
         GlobalManager.getInstance().startConnect();
@@ -180,7 +168,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,M
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        GlobalManager.getInstance().startChat(this,json.toString(), new FunConfig(true));
+        ChattingResolvedActivity.startChat(this,json.toString());
+
     }
 
 }

@@ -1,9 +1,10 @@
 package com.zero.avaloan.avalongate.application;
 
 import android.app.Application;
+import android.content.Context;
 import android.os.Handler;
+import android.support.multidex.MultiDex;
 import com.egoo.sdk.GlobalManager;
-import com.egoo.sdk.entiy.User;
 
 public class App extends Application {
     private static App appInstance;
@@ -21,6 +22,12 @@ public class App extends Application {
         mMainThreadHandler = new Handler();
         mMainThreadId = android.os.Process.myTid();
         initChat();
+    }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
     }
 
     /**

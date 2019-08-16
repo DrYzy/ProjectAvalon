@@ -10,6 +10,7 @@ import butterknife.ButterKnife;
 import com.zero.avaloan.avalongate.R;
 import com.zero.avaloan.avalongate.mvp.activity.AnimationActivity;
 import com.zero.avaloan.avalongate.mvp.activity.LoginActivity;
+import com.zero.avaloan.avalongate.mvp.activity.MainActivity;
 import com.zero.avaloan.avalongate.mvp.activity.RxjavaActivity;
 
 public class HomeActivity extends BaseActivity implements View.OnClickListener {
@@ -37,6 +38,8 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
                 finish();
             }
         },"首页");
+
+        startActivity(new Intent(HomeActivity.this,MainActivity.class));
 
     }
 

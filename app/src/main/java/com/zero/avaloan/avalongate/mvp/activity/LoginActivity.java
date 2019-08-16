@@ -9,8 +9,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import com.egoo.sdk.GlobalManager;
-import com.egoo.sdk.entiy.FunConfig;
 import com.zero.avaloan.avalongate.R;
 import com.zero.avaloan.avalongate.base.BaseActivity;
 import com.zero.avaloan.avalongate.mvp.model.LoginModel;
