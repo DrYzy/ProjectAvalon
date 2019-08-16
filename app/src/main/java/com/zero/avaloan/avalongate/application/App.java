@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Handler;
 import android.support.multidex.MultiDex;
+import com.egoo.chat.ChatSDKManager;
 import com.egoo.sdk.GlobalManager;
 
 public class App extends Application {
@@ -46,5 +47,7 @@ public class App extends Application {
 
     private void initChat(){
         GlobalManager.getInstance().initApp(this);
+        ChatSDKManager.initChatSDK(this);
+
     }
 }

@@ -148,6 +148,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,M
 
         GlobalManager.getInstance().init(user, true, MainActivity.this);
         GlobalManager.getInstance().startConnect();
+        jump2Page();
 
     }
 
