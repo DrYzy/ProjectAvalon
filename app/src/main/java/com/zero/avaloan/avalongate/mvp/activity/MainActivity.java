@@ -169,8 +169,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,M
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        ChattingResolvedActivity.startChat(this,json.toString());
-
+        String jsonStr = "{\n" +
+                "\"shopId\": 1234567,\n" +
+                "\"producturl\": \"“产品链接”\",\n" +
+                "\"productimg\": \"缩略图地址\",\n" +
+                "\"productdisc\": \"产品描述\"\n" +
+                "}";
+        ChattingResolvedActivity.startChat(this,jsonStr);
+        finish();
     }
 
 }
