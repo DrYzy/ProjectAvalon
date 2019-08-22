@@ -170,10 +170,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,M
             e.printStackTrace();
         }
         String jsonStr = "{\n" +
-                "\"shopId\": 1234567,\n" +
-                "\"producturl\": \"“产品链接”\",\n" +
-                "\"productimg\": \"缩略图地址\",\n" +
-                "\"productdisc\": \"产品描述\"\n" +
+                "\"bizNo\": \"1234\", //业务号码\n" +
+                "\"productInfo\": \"豆豆钱\",//产品信息\n" +
+                "\"phone\": \"155**** ***1\",//电话号码\n" +
+                "\"ip\": \"192.168.10.0\",//ip地区\n" +
+                "\"clientSys\": \"app\"//软件环境\n" +
                 "}";
         ChattingResolvedActivity.startChat(this,jsonStr);
         finish();
