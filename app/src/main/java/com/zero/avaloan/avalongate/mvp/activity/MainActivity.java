@@ -159,22 +159,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,M
      *
      * */
     private void jump2Page(){
-        JSONObject json = new JSONObject();
-        try {
-//            json.put("time","2018-01-02  15.12.30");
-            json.put("time",null);
-            json.put("orderid","127837867723");
-            json.put("money","￥18.6");
-            json.put("cancelReason", "态度不好");
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
         String jsonStr = "{\n" +
-                "\"bizNo\": \"1234\", //业务号码\n" +
-                "\"productInfo\": \"豆豆钱\",//产品信息\n" +
-                "\"phone\": \"155**** ***1\",//电话号码\n" +
-                "\"ip\": \"192.168.10.0\",//ip地区\n" +
-                "\"clientSys\": \"app\"//软件环境\n" +
+                "\"bizNo\": \"1234\"," +
+                "\"productInfo\": \"豆豆钱\"," +
+                "\"phone\": \"155**** ***1\"," +
+                "\"ip\": \"192.168.10.0\"," +
+                "\"clientSys\": \"app\"" +
                 "}";
         ChattingResolvedActivity.startChat(this,jsonStr);
         finish();
