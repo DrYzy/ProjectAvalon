@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="integer" name="duration_max"/>
+    <attr format="reference" name="iconLeft"/>
+    <attr format="dimension" name="iconMargin"/>
+    <attr format="reference" name="iconRight"/>
+    <attr format="dimension" name="iconSize"/>
+    <attr format="reference" name="iconSrc"/>
+    <color name="__picker_black_40">#282828</color>
+    <color name="__picker_common_primary">#f3f3f3</color>
+    <color name="__picker_item_photo_border_n">#33ffffff</color>
+    <color name="__picker_item_photo_border_selected">#ff99cc00</color>
+    <color name="__picker_pager_bg">#CA000000</color>
+    <color name="__picker_selected_bg">#44000000</color>
+    <color name="__picker_text_120">#787878</color>
+    <color name="__picker_text_40">#282828</color>
+    <color name="__picker_text_80">#505050</color>
+    <color name="accent">#4CAF50</color>
+    <color name="bg_gray">#ecedef</color>
+    <color name="black">#000000</color>
+    <color name="brightness">#ffffffff</color>
+    <color name="cameraview_bg">#000000</color>
+    <color name="chat_bg_circle_gray">#B3B3B3</color>
+    <color name="chat_bg_circle_white_solid">#fdf9f9</color>
+    <color name="chat_bg_circle_white_stroke">#CECECE</color>
+    <color name="chat_dialog_eval_text_color">#fdfbfb</color>
+    <color name="chat_edit_bg_stroke_color">#d5d3d5</color>
+    <color name="chat_evaluate__bg_shape_solid_color">#ffffff</color>
+    <color name="chat_evaluate_bg_root_shape_solid_color">#ffffff</color>
+    <color name="chat_evaluate_bg_shape_pressed_solid_color">#DADADA</color>
+    <color name="chat_evaluate_submit_shape_solid_color">#0201FD</color>
+    <color name="chat_full_image_gb">#000000</color>
+    <color name="chat_item_send_icon_solid_color">#2B6095</color>
+    <color name="chat_order_circle_corner_shape_stroke_color">#ffffff</color>
+    <color name="chat_title_bar_bg">#454545</color>
+    <color name="chatting_list_bg">@color/default_bg</color>
+    <color name="checkbox_color">#FB4846</color>
+    <color name="checkbox_unchecked_color">#DFDFDF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#b3adad</color>
+    <color name="default_bg">#ebebeb</color>
+    <color name="divider_line">#eeeeee</color>
+    <color name="evaluate_activity_bg">#eeeeee</color>
+    <color name="mic_color">#FFFFFF</color>
+    <color name="photoview_bg">#000000</color>
+    <color name="refresh_bg_color">#7e7b7b</color>
+    <color name="refresh_color_1">#d42929</color>
+    <color name="refresh_color_2">#0ce42c</color>
+    <color name="satifacation_bg">#fff</color>
+    <color name="satifacation_textview_bg">#aaaaaa</color>
+    <color name="satifacation_textview_color">#a3a8ad</color>
+    <color name="startdard_bg">#000000</color>
+    <color name="startdard_tvcolor">#ffffff</color>
+    <color name="startdard_tvcolor2">#ffffff</color>
+    <color name="status_bar_color">#454545</color>
+    <color name="text_sub">#919191</color>
+    <color name="text_title">#1b1b1b</color>
+    <color name="title_bar_bg">#FFFFFF</color>
+    <color name="title_bar_text_color">#333333</color>
+    <color name="titlebar_relative_background">#0d85f5</color>
+    <color name="titlebar_textview">#FDFFFE</color>
+    <color name="transparent_black">#94333232</color>
+    <color name="white">#FFFFFF</color>
+    <dimen name="__picker_item_camera_size">80dip</dimen>
+    <dimen name="__picker_item_directory_height">80dp</dimen>
+    <dimen name="__picker_item_photo_size">80dip</dimen>
+    <dimen name="__picker_iwf_actionBarSize">48dip</dimen>
+    <dimen name="accept_msg_img_bubbleimgview_angle">6dp</dimen>
+    <dimen name="accept_msg_img_bubbleimgview_aorrwheight">8dp</dimen>
+    <dimen name="accept_msg_img_bubbleimgview_aorrwposion">15dp</dimen>
+    <dimen name="accept_msg_img_bubbleimgview_aorrwwidth">10dp</dimen>
+    <dimen name="accept_msg_img_bubbleimgview_maxwidth">200dp</dimen>
+    <dimen name="accept_msg_img_bubbleimgview_minwidth">120dp</dimen>
+    <dimen name="accept_msg_img_img_height">36dp</dimen>
+    <dimen name="accept_msg_img_img_width">36dp</dimen>
+    <dimen name="accept_msg_img_relative_width">280dp</dimen>
+    <dimen name="accept_msg_img_textview_marginbottom">3dp</dimen>
+    <dimen name="accept_msg_img_textview_marginleft">5dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="brightness_iv_margintop">20dp</dimen>
+    <dimen name="brightness_ll_height">120dp</dimen>
+    <dimen name="brightness_ll_margin">20dp</dimen>
+    <dimen name="brightness_ll_width">155dp</dimen>
+    <dimen name="brightness_pb_height">3dp</dimen>
+    <dimen name="brightness_pb_marginbottom">20dp</dimen>
+    <dimen name="brightness_pb_marginleft">24dp</dimen>
+    <dimen name="brightness_pb_marginright">24dp</dimen>
+    <dimen name="brightness_pb_margintop">8dp</dimen>
+    <dimen name="brightness_tv_height">20dp</dimen>
+    <dimen name="brightness_tv_margintop">12dp</dimen>
+    <dimen name="brightness_tv_size">16sp</dimen>
+    <dimen name="cameraview_imgview_margin">16dp</dimen>
+    <dimen name="chat_bg_circle_gray_size_height">5dp</dimen>
+    <dimen name="chat_bg_circle_gray_size_width">5dp</dimen>
+    <dimen name="chat_dialog_eval_pading">10dp</dimen>
+    <dimen name="chat_dialog_eval_text_size_20sp">18sp</dimen>
+    <dimen name="chat_edit_bg_stroke_width">1dp</dimen>
+    <dimen name="chat_evaluate_bg_root_shape_solid_width">2dp</dimen>
+    <dimen name="chat_evaluate_bg_shape_coners_radius">5dp</dimen>
+    <dimen name="chat_evaluate_bg_shape_pressed_corners_radius">20dp</dimen>
+    <dimen name="chat_evaluate_submit_shape_corners_radius">7dp</dimen>
+    <dimen name="chat_evalueate_bg_root_shape_corners_radius">10dp</dimen>
+    <dimen name="chat_evalute_rate_width_height">40dp</dimen>
+    <dimen name="chat_file_picker_0_dp">0dp</dimen>
+    <dimen name="chat_ibg_circle_white_storke_width">1dp</dimen>
+    <dimen name="chat_item_receiver_icon_corners_radius">5dp</dimen>
+    <dimen name="chat_item_receiver_icon_size_height">40dp</dimen>
+    <dimen name="chat_item_receiver_icon_size_width">20dp</dimen>
+    <dimen name="chat_item_send_icon_corners_radius">5dp</dimen>
+    <dimen name="chat_item_send_icon_size_height">40dp</dimen>
+    <dimen name="chat_item_send_icon_size_width">20dp</dimen>
+    <dimen name="chat_order_circle_corner_shape_corners_left_radius">10dp</dimen>
+    <dimen name="chat_order_circle_corner_shape_corners_right_radius">10dp</dimen>
+    <dimen name="chat_order_circle_corner_shape_padding_bottom">3dp</dimen>
+    <dimen name="chat_order_circle_corner_shape_padding_left">3dp</dimen>
+    <dimen name="chat_order_circle_corner_shape_padding_right">3dp</dimen>
+    <dimen name="chat_order_circle_corner_shape_padding_top">3dp</dimen>
+    <dimen name="chat_order_circle_corner_shape_stroke_width">3dp</dimen>
+    <dimen name="chat_title_bar_height">45dp</dimen>
+    <dimen name="content_vertical_margin">5dp</dimen>
+    <dimen name="file_icon_height">40dp</dimen>
+    <dimen name="file_icon_width">40dp</dimen>
+    <dimen name="file_item_checkbox_size">22dp</dimen>
+    <dimen name="file_name_textSize">17sp</dimen>
+    <dimen name="indicator_height">10dp</dimen>
+    <dimen name="input_function_width_height">30dp</dimen>
+    <dimen name="max_panel_height">380dp</dimen>
+    <dimen name="mic_img_height">48dp</dimen>
+    <dimen name="mic_img_width">48dp</dimen>
+    <dimen name="mic_ll_padding">16dp</dimen>
+    <dimen name="mic_textview_margintop">6dp</dimen>
+    <dimen name="mic_textview_size">16sp</dimen>
+    <dimen name="mic_textview_width">150dp</dimen>
+    <dimen name="mic_tv_width">150dp</dimen>
+    <dimen name="min_keyboard_height">80dp</dimen>
+    <dimen name="min_panel_height">220dp</dimen>
+    <dimen name="msgtext_angle">4dp</dimen>
+    <dimen name="msgtext_arrowheight">10dp</dimen>
+    <dimen name="msgtext_arrowposition">13dp</dimen>
+    <dimen name="msgtext_arrowwidth">8dp</dimen>
+    <dimen name="msgtext_bl_minheight">40dp</dimen>
+    <dimen name="msgtext_bl_minwidth">60dp</dimen>
+    <dimen name="msgtext_imgview_height">36dp</dimen>
+    <dimen name="msgtext_imgview_width">36dp</dimen>
+    <dimen name="msgtext_rl_width">280dp</dimen>
+    <dimen name="msgtext_tv_margin_bottom">3dp</dimen>
+    <dimen name="msgtext_tv_margin_left">3dp</dimen>
+    <dimen name="msgvideo_arrowheight">8dp</dimen>
+    <dimen name="msgvideo_arrowposition">15dp</dimen>
+    <dimen name="msgvideo_arrowwidth">10dp</dimen>
+    <dimen name="msgvideo_biv_angle">6dp</dimen>
+    <dimen name="msgvideo_ibtn">45dp</dimen>
+    <dimen name="msgvideo_ibtn_height">45dp</dimen>
+    <dimen name="msgvideo_imgview_width">36dp</dimen>
+    <dimen name="msgvideo_rl_width">280dp</dimen>
+    <dimen name="msgvideo_textview_marginbottom">3dp</dimen>
+    <dimen name="msgvideo_textview_marginleft">5dp</dimen>
+    <dimen name="msgvoice_angle">4dp</dimen>
+    <dimen name="msgvoice_arrowheight">10dp</dimen>
+    <dimen name="msgvoice_arrowposion">10dp</dimen>
+    <dimen name="msgvoice_arrowwidth">8dp</dimen>
+    <dimen name="msgvoice_bil_minheight">30dp</dimen>
+    <dimen name="msgvoice_bil_minwidth">120dp</dimen>
+    <dimen name="msgvoice_imgheight">18dp</dimen>
+    <dimen name="msgvoice_imgview_height">36dp</dimen>
+    <dimen name="msgvoice_imgview_width">36dp</dimen>
+    <dimen name="msgvoice_imgwidth">18dp</dimen>
+    <dimen name="msgvoice_tv_marginbootom">3dp</dimen>
+    <dimen name="msgvoice_tv_marginleft">5dp</dimen>
+    <dimen name="mycamera_iconmargin">20dp</dimen>
+    <dimen name="mycamera_iconsize">30dp</dimen>
+    <dimen name="panel_height">200dp</dimen>
+    <dimen name="pv_start_button_w_h_fullscreen">62dp</dimen>
+    <dimen name="pv_start_button_w_h_normal">45dp</dimen>
+    <dimen name="satifacation_imgview_height">150dp</dimen>
+    <dimen name="satifacation_imgview_marginleft">15dp</dimen>
+    <dimen name="satifacation_imgview_margintop">5dp</dimen>
+    <dimen name="satifacation_paddingleft">10dp</dimen>
+    <dimen name="satifacation_paddingright">10dp</dimen>
+    <dimen name="satifacation_textview_marginright">5dp</dimen>
+    <dimen name="satifacation_textview_margintop">5dp</dimen>
+    <dimen name="satifacation_textview_size">10sp</dimen>
+    <dimen name="satifacation_textview_size2">18sp</dimen>
+    <dimen name="satifacation_textview_size3">15sp</dimen>
+    <dimen name="satifacition_marginleft">25dp</dimen>
+    <dimen name="satifacition_marginright">25dp</dimen>
+    <dimen name="sendmsgimg_arrowheight">8dp</dimen>
+    <dimen name="sendmsgimg_arrowposition">15dp</dimen>
+    <dimen name="sendmsgimg_arrowwidth">10dp</dimen>
+    <dimen name="sendmsgimg_biv_angle">6dp</dimen>
+    <dimen name="sendmsgimg_imgheight">18dp</dimen>
+    <dimen name="sendmsgimg_imgwidth">18dp</dimen>
+    <dimen name="sendmsgimg_iv_height">36dp</dimen>
+    <dimen name="sendmsgimg_iv_width">36dp</dimen>
+    <dimen name="sendmsgimg_rl_width">280dp</dimen>
+    <dimen name="sendmsglocation_angle">4dp</dimen>
+    <dimen name="sendmsglocation_arrowheight">10dp</dimen>
+    <dimen name="sendmsglocation_arrowposition">10dp</dimen>
+    <dimen name="sendmsglocation_arrowwidth">8dp</dimen>
+    <dimen name="sendmsglocation_bll_minheight">48dp</dimen>
+    <dimen name="sendmsglocation_bll_minwidth">120dp</dimen>
+    <dimen name="sendmsglocation_fl_height">110dp</dimen>
+    <dimen name="sendmsglocation_fl_marginright">10dp</dimen>
+    <dimen name="sendmsglocation_iv_height">36dp</dimen>
+    <dimen name="sendmsglocation_iv_width">36dp</dimen>
+    <dimen name="sendmsglocation_ivheight">18dp</dimen>
+    <dimen name="sendmsglocation_ivwidth">18dp</dimen>
+    <dimen name="sendmsglocation_rl_width">280dp</dimen>
+    <dimen name="sendmsgtext_iv_height">36dp</dimen>
+    <dimen name="sendmsgtext_iv_width">36dp</dimen>
+    <dimen name="sendmsgtext_ivheight">22dp</dimen>
+    <dimen name="sendmsgtext_ivwidth">22dp</dimen>
+    <dimen name="sendmsgvideo_angle">6dp</dimen>
+    <dimen name="sendmsgvideo_arrowheight">8dp</dimen>
+    <dimen name="sendmsgvideo_arrowposition">15dp</dimen>
+    <dimen name="sendmsgvideo_arrowwidth">10dp</dimen>
+    <dimen name="sendmsgvideo_biv_width">120dp</dimen>
+    <dimen name="sendmsgvideo_img_height">18dp</dimen>
+    <dimen name="sendmsgvideo_img_width">18dp</dimen>
+    <dimen name="sendmsgvideo_imgbtn_height">45dp</dimen>
+    <dimen name="sendmsgvideo_imgbtn_width">45dp</dimen>
+    <dimen name="sendmsgvideo_iv_height">36dp</dimen>
+    <dimen name="sendmsgvideo_iv_width">36dp</dimen>
+    <dimen name="sendmsgvideo_rl_width">280dp</dimen>
+    <dimen name="sendmsgvoice_angle">4dp</dimen>
+    <dimen name="sendmsgvoice_arrowheight">10dp</dimen>
+    <dimen name="sendmsgvoice_arrowposition">10dp</dimen>
+    <dimen name="sendmsgvoice_arrowwidth">8dp</dimen>
+    <dimen name="sendmsgvoice_bll_minheight">30dp</dimen>
+    <dimen name="sendmsgvoice_bll_minwidth">120dp</dimen>
+    <dimen name="sendmsgvoice_iv_height">36dp</dimen>
+    <dimen name="sendmsgvoice_iv_width">36dp</dimen>
+    <dimen name="sendmsgvoice_ivheight">18dp</dimen>
+    <dimen name="sendmsgvoice_ivwidth">18dp</dimen>
+    <dimen name="sendmsgvoice_rl_width">280dp</dimen>
+    <dimen name="standard_iv_margintop">20dp</dimen>
+    <dimen name="standard_iv_paddingleft">12dp</dimen>
+    <dimen name="standard_iv_paddingstart">12dp</dimen>
+    <dimen name="standard_iv_width">30dp</dimen>
+    <dimen name="standard_ivwidth">45dp</dimen>
+    <dimen name="standard_ll_height">50dp</dimen>
+    <dimen name="standard_ll_marginend">14dp</dimen>
+    <dimen name="standard_ll_marginringt">14dp</dimen>
+    <dimen name="standard_pb_height">1.5dp</dimen>
+    <dimen name="standard_pb_heigth2">45dp</dimen>
+    <dimen name="standard_pb_width">45dp</dimen>
+    <dimen name="standard_rl_height">60dp</dimen>
+    <dimen name="standard_seekbar_marginright">14dp</dimen>
+    <dimen name="standard_seekbar_maxheight">1dp</dimen>
+    <dimen name="standard_seekbar_minheight">1dp</dimen>
+    <dimen name="standard_seekbar_paddingbottom">8dp</dimen>
+    <dimen name="standard_seekbar_paddingleft">12dp</dimen>
+    <dimen name="standard_seekbar_paddingright">12dp</dimen>
+    <dimen name="standard_seekbar_paddingtop">8dp</dimen>
+    <dimen name="standard_seekbar_width">0dp</dimen>
+    <dimen name="standard_tv_marginleft">14dp</dimen>
+    <dimen name="text_body">15sp</dimen>
+    <dimen name="text_subhead">17sp</dimen>
+    <dimen name="tinywebview_height">150dp</dimen>
+    <dimen name="tinywebview_margin">20dp</dimen>
+    <dimen name="titlebar_imgbtn_height">50dp</dimen>
+    <dimen name="titlebar_imgbtn_width">40dp</dimen>
+    <dimen name="titlebar_relative_paddingleft">12dp</dimen>
+    <dimen name="titlebar_relative_paddingright">20dp</dimen>
+    <dimen name="titlebar_textview_size">18sp</dimen>
+    <dimen name="volume_iv_margintop">20dp</dimen>
+    <dimen name="volume_ll_height">120dp</dimen>
+    <dimen name="volume_ll_margin">20dp</dimen>
+    <dimen name="volume_ll_width">155dp</dimen>
+    <dimen name="volume_pb_height">3dp</dimen>
+    <dimen name="volume_pb_marginbottom">20dp</dimen>
+    <dimen name="volume_pb_marginleft">24dp</dimen>
+    <dimen name="volume_pb_marginright">24dp</dimen>
+    <dimen name="volume_pb_margintop">8dp</dimen>
+    <dimen name="volume_tv_height">20dp</dimen>
+    <dimen name="volume_tv_margintop">12dp</dimen>
+    <dimen name="volume_tv_size">16sp</dimen>
+    <string name="Loosen_the_end">松开结束</string>
+    <string name="__picker_all_image">所有图片</string>
+    <string name="__picker_cancel">取消</string>
+    <string name="__picker_confirm_to_delete">确认删除？</string>
+    <string name="__picker_delete">删除</string>
+    <string name="__picker_deleted_a_photo">删除了一张图片</string>
+    <string name="__picker_done">完成</string>
+    <string name="__picker_done_with_count">完成(%1$d/%2$d)</string>
+    <string name="__picker_image_count">%1$d张</string>
+    <string name="__picker_image_index">%1$d/%2$d</string>
+    <string name="__picker_over_max_count_tips">你最多可以选择%1$d张图片</string>
+    <string name="__picker_title">图片</string>
+    <string name="__picker_undo">撤消</string>
+    <string name="__picker_yes">确定</string>
+    <string name="all_files">所有文件</string>
+    <string name="all_photos">所有照片</string>
+    <string name="all_videos">所有视频</string>
+    <string name="app_name">ChatUI</string>
+    <string formatted="false" name="attachments_num">%d</string>
+    <string formatted="false" name="attachments_title_text">%d</string>
+    <string name="cancel">取消</string>
+    <string name="cancel_send">手指上滑，取消发送</string>
+    <string name="chat_atleast_delete_one_item">至少选择一条删除的数据</string>
+    <string name="chat_calling_hint">您正处于通话中,无法使用此功能</string>
+    <string name="chat_delete_item_success">删除成功</string>
+    <string name="chat_dialog_eval_copy">复制</string>
+    <string name="chat_dialog_eval_delete">删除</string>
+    <string name="chat_dialog_eval_select">多选</string>
+    <string name="chat_evaluate_failure">评价提交失败，请重新提交</string>
+    <string name="chat_evaluate_reboot">请选择是否解决本次问题</string>
+    <string name="chat_evaluate_stars">请对客服做出星级评价</string>
+    <string name="chat_evaluate_success">提交评价成功</string>
+    <string name="chat_image_download_failure_hint">图片下载失败</string>
+    <string name="chat_image_download_success_hint">图片下载成功</string>
+    <string name="chat_image_downloading_hint">正在下载....</string>
+    <string name="chat_image_load_failure">图片加载异常</string>
+    <string name="chat_image_loaded_hint">图片加载完成</string>
+    <string name="chat_image_loading_hint">图片正在加载......</string>
+    <string name="chat_item_text_copy_success">复制成功</string>
+    <string name="chat_items_delete_success">批量删除成功</string>
+    <string name="chat_medicine_agree_content">
+        \t\t\t\t\t\t本服务所提供的药学建议、分析等均建立在您提问所涉及包含病情在内的全部信息的真实、准确、完整的基础上，鉴于药师仅通过在线提问收集病情资料，并未当面进行详细的诊疗；因此在线诊疗仅供参考；不能代替药师与病人的面对面诊疗；您了解并承诺将自行承担采纳药学建议的全部责任。
+    </string>
+    <string name="chat_no_internet_hint">没有可用网络，请查看网络连接状态</string>
+    <string name="chat_no_support_file_hint">不支持此类文件</string>
+    <string name="chat_pic_too_large_hint">图片不能大于2M</string>
+    <string name="chat_reboot_conference_hint">机器人会话阶段，不支持多媒体文件发送.</string>
+    <string name="chat_recycle_item_accept_reboot_zrg">转人工</string>
+    <string name="chat_resolve_tv">已解决</string>
+    <string name="chat_root_question_resolve">已解决</string>
+    <string name="chat_root_question_unresolve">未解决</string>
+    <string name="chat_tool_bar_txt">正在咨询</string>
+    <string name="chat_un_arrow_file">大于10M不允许上传</string>
+    <string name="chat_unresolve_tv">未解决</string>
+    <string name="chat_video_too_large_hint">视频不能大于10M</string>
+    <string name="chat_yiyao_title_zixun">咨询记录</string>
+    <string name="done">完成</string>
+    <string name="end">结束</string>
+    <string name="evaluate_activity_notiy_tv">请您对本次服务进行评价!</string>
+    <string name="failure">失败</string>
+    <string name="file">文件</string>
+    <string name="images">Images</string>
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_release">释放立即刷新</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+    <string name="listview_loading">正在加载...</string>
+    <string name="loading_done">加载完成</string>
+    <string name="message_error_storage">请检查存储权限.</string>
+    <string name="message_install_failed">你有的手机不允许我们安装APP.</string>
+    <string name="message_overlay_failed">你的手机不允许我们在其他应用上悬浮.</string>
+    <string name="message_permission_always_failed">请在设置中允许此权限:\n\n%1$s</string>
+    <string name="message_permission_rationale">授予以下权限才能使用此功能:\n\n%1$s</string>
+    <string name="message_setting_comeback">用户从设置页面返回.</string>
+    <string name="mic_textview">00:00</string>
+    <string name="no_camera_exists">没有可用的摄像头!</string>
+    <string name="no_files_found">没有发现文件</string>
+    <string name="nomore_loading">没有了</string>
+    <string name="order">订单</string>
+    <string name="out_save">松开保存</string>
+    <string name="permission_calendar">日历</string>
+    <string name="permission_camera">摄像头</string>
+    <string name="permission_contact">联系人</string>
+    <string name="permission_filepicker_rationale">需要访问文件的存储权限.</string>
+    <string name="permission_install">安装App</string>
+    <string name="permission_location">位置</string>
+    <string name="permission_microphone">麦克风</string>
+    <string name="permission_name_calendar">日历</string>
+    <string name="permission_name_camera">摄像头</string>
+    <string name="permission_name_contacts">联系人</string>
+    <string name="permission_name_location">位置</string>
+    <string name="permission_name_microphone">麦克风</string>
+    <string name="permission_name_phone">电话</string>
+    <string name="permission_name_sensors">传感器</string>
+    <string name="permission_name_sms">短信</string>
+    <string name="permission_name_storage">存储</string>
+    <string name="permission_overlay">悬浮窗</string>
+    <string name="permission_phone">手机状态</string>
+    <string name="permission_sensors">传感器</string>
+    <string name="permission_setting">权限设置</string>
+    <string name="permission_sms">短信</string>
+    <string name="permission_storage">存储</string>
+    <string name="picture">照片</string>
+    <string name="press_say">按住说话</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="resume">重新设置</string>
+    <string name="satifacation">满意度</string>
+    <string name="see_all">查看全文</string>
+    <string name="select_doc_text">请选择文件</string>
+    <string name="select_file_is_not_exit">文件已经损坏</string>
+    <string name="select_photo_text">请选择照片</string>
+    <string name="send_tv">发送</string>
+    <string name="setting">设置</string>
+    <string name="standard_text">00:00</string>
+    <string name="standard_text2">00:00</string>
+    <string name="successfully">成功</string>
+    <string name="take_photo">拍照</string>
+    <string name="title_dialog">提示</string>
+    <string name="touch_to_say">按住说话</string>
+    <string name="video">视频</string>
+    <string name="video_record">短视频</string>
+    <string name="videos">Videos</string>
+    <style name="AlertDialog" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:background">@drawable/dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ChatListPlusFunctionTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="ChatListRebootEvaluateTextStyle">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/sumbit_button</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="FilePickerTheme" parent="LibAppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Jingdong_theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionMenuTextColor">@color/title_bar_text_color</item>
+        <item name="actionMenuTextAppearance">@style/MenueTextStyle</item>
+    </style>
+    <style name="LibAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@android:color/background_light</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+    <style name="MenueTextStyle">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="Panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/panel_height</item>
+        <item name="android:background">#fffefefe</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="PanelItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textColor">#b3b3b3</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <style name="PanelRoot">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Permission"/>
+    <style name="Permission.Theme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Permission.Theme.Activity"/>
+    <style name="Permission.Theme.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+    <style name="PickerTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@color/colorPrimary</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMaxWidth">0dp</item>
+    </style>
+    <style name="RebootRelateQuestion">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#3eaffb</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+    <style name="SmoothCheckBoxStyle">
+        <item name="color_checked">@color/checkbox_color</item>
+        <item name="color_unchecked">@android:color/white</item>
+        <item name="color_unchecked_stroke">@color/checkbox_unchecked_color</item>
+        <item name="color_tick">@android:color/white</item>
+    </style>
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionMenuTextColor">#000000</item> <!--menu字体颜色-->
+        <item name="android:textSize">18sp</item> <!--menu字体大小-->
+    </style>
+    <style name="Widget.CameraView" parent="android:Widget">
+        <item name="android:adjustViewBounds">false</item>
+        <item name="facing">back</item>
+        <item name="aspectRatio">4:3</item>
+        <item name="autoFocus">true</item>
+        <item name="flash">auto</item>
+    </style>
+    <style name="pv_popup_toast_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="pv_style_dialog_progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/pv_popup_toast_anim</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="text_body">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_sub</item>
+        <item name="android:textSize">@dimen/text_body</item>
+    </style>
+    <style name="text_subhead_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textSize">@dimen/text_subhead</item>
+    </style>
+    <style name="win_order_list_anim">
+        <item name="android:windowEnterAnimation">@anim/chat_win_order_in</item>
+        <item name="android:windowExitAnimation">@anim/chat_win_order_out</item>
+    </style>
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
+            <flag name="BallPulse" value="0"/>
+            <flag name="BallGridPulse" value="1"/>
+            <flag name="BallClipRotate" value="2"/>
+            <flag name="BallClipRotatePulse" value="3"/>
+            <flag name="SquareSpin" value="4"/>
+            <flag name="BallClipRotateMultiple" value="5"/>
+            <flag name="BallPulseRise" value="6"/>
+            <flag name="BallRotate" value="7"/>
+            <flag name="CubeTransition" value="8"/>
+            <flag name="BallZigZag" value="9"/>
+            <flag name="BallZigZagDeflect" value="10"/>
+            <flag name="BallTrianglePath" value="11"/>
+            <flag name="BallScale" value="12"/>
+            <flag name="LineScale" value="13"/>
+            <flag name="LineScaleParty" value="14"/>
+            <flag name="BallScaleMultiple" value="15"/>
+            <flag name="BallPulseSync" value="16"/>
+            <flag name="BallBeat" value="17"/>
+            <flag name="LineScalePulseOut" value="18"/>
+            <flag name="LineScalePulseOutRapid" value="19"/>
+            <flag name="BallScaleRipple" value="20"/>
+            <flag name="BallScaleRippleMultiple" value="21"/>
+            <flag name="BallSpinFadeLoader" value="22"/>
+            <flag name="LineSpinFadeLoader" value="23"/>
+            <flag name="TriangleSkewSpin" value="24"/>
+            <flag name="Pacman" value="25"/>
+            <flag name="BallGridBeat" value="26"/>
+            <flag name="SemiCircleSpin" value="27"/>
+        </attr>
+        <attr format="color" name="indicator_color"/>
+    </declare-styleable>
+    <declare-styleable name="BubbleView">
+        <attr format="dimension" name="arrowWidth"/>
+        <attr format="dimension" name="angle"/>
+        <attr format="dimension" name="arrowHeight"/>
+        <attr format="dimension" name="arrowPosition"/>
+        <attr format="color" name="bubbleColor"/>
+        <attr format="enum" name="arrowLocation">
+            <enum name="left" value="0x00"/>
+            <enum name="right" value="0x01"/>
+            <enum name="top" value="0x02"/>
+            <enum name="bottom" value="0x03"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr format="reference" name="metaButtonBarStyle"/>
+        <attr format="reference" name="metaButtonBarButtonStyle"/>
+    </declare-styleable>
+    <declare-styleable name="CameraView">
+        <!--
+          Set this to true if you want the CameraView to adjust its bounds to preserve the aspect
+          ratio of its camera preview.
+        -->
+        <attr name="android:adjustViewBounds"/>
+        <!-- Direction the camera faces relative to device screen. -->
+        <attr format="enum" name="facing">
+            <!-- The camera device faces the opposite direction as the device's screen. -->
+            <enum name="back" value="0"/>
+            <!-- The camera device faces the same direction as the device's screen. -->
+            <enum name="front" value="1"/>
+        </attr>
+        <!-- Aspect ratio of camera preview and pictures. -->
+        <attr format="string" name="aspectRatio"/>
+        <!-- Continuous auto focus mode. -->
+        <attr format="boolean" name="autoFocus"/>
+        <!-- The flash mode. -->
+        <attr format="enum" name="flash">
+            <!-- Flash will not be fired. -->
+            <enum name="off" value="0"/>
+            <!--
+              Flash will always be fired during snapshot.
+              The flash may also be fired during preview or auto-focus depending on the driver.
+            -->
+            <enum name="on" value="1"/>
+            <!--
+              Constant emission of light during preview, auto-focus and snapshot.
+              This can also be used for video recording.
+            -->
+            <enum name="torch" value="2"/>
+            <!--
+              Flash will be fired automatically when required.
+              The flash may be fired during preview, auto-focus, or snapshot depending on the
+              driver.
+            -->
+            <enum name="auto" value="3"/>
+            <!--
+              Flash will be fired in red-eye reduction mode.
+            -->
+            <enum name="redEye" value="4"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Emojicon">
+        <attr format="dimension" name="emojiconSize"/>
+        <attr format="enum" name="emojiconAlignment">
+            <enum name="bottom" value="0"/>
+            <enum name="baseline" value="1"/>
+        </attr>
+        <attr format="integer" name="emojiconTextStart"/>
+        <attr format="integer" name="emojiconTextLength"/>
+        <attr format="boolean" name="emojiconUseSystemDefault"/>
+    </declare-styleable>
+    <declare-styleable name="JCameraView">
+        <attr name="iconSize"/>
+        <attr name="iconMargin"/>
+        <attr name="iconSrc"/>
+        <attr name="iconLeft"/>
+        <attr name="iconRight"/>
+        <attr name="duration_max"/>
+    </declare-styleable>
+    <declare-styleable name="KPSwitchPanelLayout">
+        <attr format="boolean" name="ignore_recommend_height"/>
+    </declare-styleable>
+    <declare-styleable name="RatingViewViviSDK">
+        <attr format="integer" name="type"/>
+    </declare-styleable>
+    <declare-styleable name="SmoothCheckBox">
+        <attr format="integer" name="duration"/>
+        <attr format="dimension" name="stroke_width"/>
+        <attr format="color" name="color_tick"/>
+        <attr format="color" name="color_checked"/>
+        <attr format="color" name="color_unchecked"/>
+        <attr format="color" name="color_unchecked_stroke"/>
+    </declare-styleable>
+</resources>

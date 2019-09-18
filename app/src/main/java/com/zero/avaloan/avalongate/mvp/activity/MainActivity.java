@@ -19,11 +19,8 @@ import com.zero.avaloan.avalongate.base.BaseActivity;
 import com.zero.avaloan.avalongate.mvp.presenter.MainPresenter;
 import com.zero.avaloan.avalongate.mvp.view.MainCallBack;
 import com.zero.avaloan.avalongate.utils.ToastUtils;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.lang.ref.WeakReference;
-import java.util.UUID;
 
 /**
  *
@@ -160,11 +157,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener,M
      * */
     private void jump2Page(){
         String jsonStr = "{\n" +
-                "\"bizNo\": \"1234\"," +
+                "\"bizNo\": \"1234\", " +
                 "\"productInfo\": \"豆豆钱\"," +
                 "\"phone\": \"155**** ***1\"," +
                 "\"ip\": \"192.168.10.0\"," +
-                "\"clientSys\": \"app\"" +
+                "\"clientSys\": \"app\"," +
+                "\"channelType\": \"Appchat\"," +
+                "\"productId\": \"kkd\"\n" +
                 "}";
         ChattingResolvedActivity.startChat(this,jsonStr);
         finish();
